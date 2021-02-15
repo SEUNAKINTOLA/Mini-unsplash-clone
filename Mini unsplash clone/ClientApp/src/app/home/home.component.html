@@ -1,0 +1,69 @@
+<div class="gallery-wrapper main-container">
+    <div class="search flex">
+        <form  style="padding-right: 10%; padding-top: 8%;" class="search-form"  #form="ngForm" (submit)="postImage()">
+            <div *ngIf="isAuthenticated" class="form-field">
+                
+                <div class="forminput" >
+                    <input [(ngModel)]="image.tags" id="tag" placeholder="Image tags" type="text" name='tag'>
+                </div>
+                
+                <div class="forminput">
+                    <select [(ngModel)]="image.collectionId" name="collection" id="collection">
+                        <option selected="selected" value="null">Select Category</option>
+                        <option *ngFor="let collection of collections, let i = index"  value="{{collections[i].collectionId}}">{{collection.collectionname}}</option>
+                      </select>
+                </div>
+                <label for="search-images" class="hidethis">Search</label>
+                <div class="forminput" >
+                    <input type="file" id="cover" accept="image/*" (change)="fileInputHandler($event.target)">
+                    <input value="Add Image" type="submit">
+                </div>
+            </div>
+        </form>
+
+
+             <form class="search-form" (keydown)="triggerEnter($event)">
+                <div class="forminput" style="position: relative;top: 0px; float: right;">
+                    <select (change)="queryImages()"  [(ngModel)]="imageQueryParam.collectionId"   name="content" id="rule">
+                        <option selected="selected" value="null">Choose Category</option>   
+                        <option  *ngFor="let collection of collections, let i = index"  value="{{collection.collectionId}}">{{collection.collectionname}}</option>
+                
+                      </select>
+                </div>
+                <br>
+            <div class="form-field forminput">
+                <label for="search-images" class="hidethis">Search</label>
+                <div style="position: absolute;bottom: 0px; width: 100%;" class="search-input">
+                    <input id="search-images" type='text' placeholder='Search' [(ngModel)]='imageQueryParam.imagename' name='searchQuery'>
+                    <button aria-label="searchimage" name="search" type="button"  (focus)="queryImages()">
+                        <i class="icon icon-searches"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="gallery-component">
+        <div class="main-content">
+            <div class="masonry flex masonry--h" id="masonry">
+                <span class="masonry-brick masonry-brick--h" *ngFor="let photo of images, let i = index" [ngStyle]="{background: 'url(' + photo?.imageurl + ') center no-repeat / cover'}">
+          <div class="image-wrapper">
+            <div (click)="openShareModal('sharePopup', true, photo)">
+              <img [alt]="photo?.imagename" *ngIf="photo?.imageurl" [src]="photo?.imageurl"
+                (load)="loading = true;" />
+            </div>
+        </div>
+        </span>
+    </div>
+    <div class="loader relative" *ngIf="photos"></div>
+    <span class="chips loadmore gallery-loadmore">
+        <ul class="text-center">
+          <li><a href="javascript:void(0);" (click)="onWindowScroll()">Load more</a></li>
+        </ul>
+      </span>
+</div>
+</div>
+</div>
+
+<app-popup id="sharePopup" [sharePhoto]="sharePhoto" [userImages]="userImages" [imageDetail]="true" class="hide">
+</app-popup>

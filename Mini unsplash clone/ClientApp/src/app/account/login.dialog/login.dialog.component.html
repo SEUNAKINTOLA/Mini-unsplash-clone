@@ -1,0 +1,104 @@
+<div  class="custom-modal login-dialog-modal" id="login-dialog-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog max-width-330px rounded-0">
+        <div class="modal-content rounded-0">
+            <div class="modal-header d-flex justify-content-end border-0">
+                <div>
+                    <button type="button"
+                        class="custom-btn none-important icons icon-16px cancel-black-icon p-0 m-0 float-none"
+                        data-dismiss="modal"></button>
+                </div>
+            </div>
+            <div style="overflow-y:scroll; height:fit-content;" class="modal-body pt-0 pl-4 pb-4 pr-4 border-0">
+                <div class="custom-modal-header mb-4">
+                    <h3 style="font-family: inherit !important;"  class="mb-1">Log In</h3>
+                </div>
+                <div class="mb-0">
+                    <div class="m-0">
+                        <div class="">
+                            <form id="login-form" (submit)="login()">
+                                <div class="w-100 mb-3">
+                                    <div class="white w-100 p-2">
+                                        <div
+                                            class="d-flex justify-content-between w-100 text-secondary font-weight-bold font-size-11px mb-2 line-height-11px">
+                                            <div  class="form-control custom-field p-0 max-height-17px font-weight-bold">Email address/ Username:</div>
+                                        </div>
+                                        <div class="d-flex mb-0">
+                                            <input id="login-email-address-field" disabled="{{inProgress? true : false}}" type="text"
+                                                placeholder="Enter your email address here..."
+                                                tabindex="0"
+                                                data-validation="Please enter your registered email address to continue"
+                                                class="form-control custom-field p-0 max-height-17px"
+                                                [(ngModel)]="data.UserName" [ngModelOptions]="{standalone: true}">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-100 mb-2">
+                                    <div class="white w-100 p-2">
+                                        <div
+                                            class="d-flex justify-content-between w-100 text-secondary font-weight-bold font-size-11px mb-2 line-height-11px">
+                                            <div  class="form-control custom-field p-0 max-height-17px font-weight-bold">Password:</div>
+                                        </div>
+                                        <div class="d-flex mb-0">
+                                            <input id="login-password-field" disabled="{{inProgress? true : false}}" type="password"
+                                                placeholder="*********"
+                                                tabindex="0"
+                                                data-validation="Please enter your password to continue"
+                                                class="form-control custom-field p-0 max-height-17px"
+                                                [(ngModel)]="data.Password" [ngModelOptions]="{standalone: true}">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-100 mb-2">
+                                    <div class="mb-1">
+                                        Forgot your password? <a tabindex="1" href="javascript:void(0)"
+                                            (click)="gotoForgotPassword()">click here</a>
+                                    </div>
+                                </div>
+
+                                <div class="w-100 mb-2">
+                                    <div class="mb-1">
+                                        Don't have an account? <a tabindex="1" href="javascript:void(0)"
+                                            (click)="gotoSignup()">Create one here</a>
+                                    </div>
+                                </div>
+                                <div style="width: 100%;" class="mt-3 mb-2">
+                                    
+                                    <div *ngIf="errors" class="alert alert-danger" role="alert">
+                                        <strong>Oops!</strong> {{errors}}
+                                    </div>
+                                    <button *ngIf="!isLoginError" style="width: 100%;" type="submit"
+                                        class="custom-btn font-weight-bold default login-btn d-flex justify-content-center w-100 m-0">
+                                        <div *ngIf="inProgress"
+                                            class="d-flex align-items-center justify-content-center">
+                                            <widget-loader size="20" color="white" isLoading="true"></widget-loader>
+                                            <div class="ml-2">In progress, please wait...</div>
+                                        </div>
+                                        <div style="width: 100%;" *ngIf="!inProgress">Login</div>
+                                    </button>
+
+                                    <button *ngIf="isLoginError" tabindex="0" type="submit"
+                                        class="custom-btn font-weight-bold danger login-btn d-flex justify-content-center w-100 m-0">
+                                        <div *ngIf="inProgress"
+                                            class="d-flex align-items-center justify-content-center">
+                                            <widget-loader size="20" color="white" isLoading="true"></widget-loader>
+                                            <div class="ml-2">In progress, please wait...</div>
+                                        </div>
+                                        <div *ngIf="!inProgress"
+                                            class="d-flex align-items-center justify-content-center">
+                                            
+                                            <div class="alert alert-danger" role="alert">
+                                                <strong>Oops!</strong> Invalid Credentials
+                                            </div>
+                                            <div class="icons icon-20px crying-white-icon mr-2"></div>
+                                            <div class="text-nowrap">{{loginErrorMessage}}</div>
+                                        </div>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

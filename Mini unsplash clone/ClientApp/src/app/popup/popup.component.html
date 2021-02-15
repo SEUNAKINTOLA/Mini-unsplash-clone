@@ -1,0 +1,59 @@
+<div class="modal">
+        <ng-container *ngTemplateOutlet="imageDetailsection"></ng-container>
+</div>
+
+<ng-template #imageDetailsection>
+    <div class="modal-body image-popup-wrap flex">
+        <div class="modal-image image-popup-image text-center"
+            [ngStyle]="{background: 'url(' + sharePhoto?.imageurl + ') center no-repeat / cover'}">
+            <a class="close" href="javascript:void(0);" (click)="closeModal('sharePopup');">
+                <i class="icon icon-arrow-back"></i>
+            </a>
+            <span><img *ngIf="sharePhoto?.imageurl" [src]="sharePhoto?.imageurl"
+                    [alt]="sharePhoto?.imagename" /></span>
+        </div>
+        <div class="modal-description image-popup-description">
+            <div class="uparrow text-center">arrow</div>
+            <h4 *ngIf="sharePhoto?.imagename">{{sharePhoto?.imagename}}</h4>
+         
+
+            <div class="buttons-wrapper flex">
+                <div class="button text-center">
+                    <a [href]="sharePhoto?.imageurl + '?force=true'" download rel="nofollow">Download</a>
+                </div>
+                <div class="button-share text-center">
+                    <span onclick="javascript:navigator.share === undefined ? 'void(0);' : 'shareImage(this)'"
+                        [attr.data-imageurl]="sharePhoto?.imageurl" [attr.data-imagetitle]="sharePhoto?.description"
+                        [attr.data-imagetext]="sharePhoto?.user?.first_name" (click)="shareToggle()"
+                        [ngClass]="isShareActive ? 'active' : ''"><i class="icon icon-share"></i>
+                        <ul class="flex">
+                            <li>
+                                <a
+                                   target="_blank" [href]="'https://www.facebook.com/sharer/sharer.php?u=' + sharePhoto?.imageurl + '&t=' + sharePhoto?.description">
+                                    <i class="icon icon-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                target="_blank" [href]="'http://twitter.com/share?text='+ sharePhoto?.description + '&url=' + sharePhoto?.imageurl">
+                                    <i class="icon icon-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a  target="_blank" [href]="'https://wa.me/?text='+ sharePhoto?.imageurl"
+                                    data-action="share/whatsapp/share">
+                                    <i class="icon icon-whatsapp"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a  target="_blank" href="javascript:void(0);" (click)="copyText(sharePhoto?.imageurl)">
+                                    <i class="icon icon-link"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-template>

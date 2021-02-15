@@ -1,0 +1,16 @@
+				<section>
+								
+								<div class="myui-element myui-element-ed08f58 myui-widget__width-initial myui-tablet-align-center myui-widget-tablet__width-inherit myui-widget myui-widget-button" data-id="ed08f58" data-element_type="widget" data-widget_type="button.default">
+										<div class="myui-widget-container">
+											<div class="myui-button-wrapper">
+						<span class="myui-button-content-wrapper">
+							<span *ngIf="!isAuthenticated" class="myui-button-text" data-toggle="modal" data-target="#basicExample"  (click)="gotoSignup()"> LOG IN / REGISTER  </span>
+							<span *ngIf="isAuthenticated" class="myui-button-text" data-toggle="modal" data-target="#basicExample"  (click)="logOut()"> LOG OUT  </span>
+						</span>
+											</div>
+										</div>
+									</div>
+
+			
+								</section>
+

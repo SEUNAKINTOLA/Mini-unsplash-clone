@@ -1,0 +1,605 @@
+.icons {
+    /*  */
+    background-size: cover;
+    background-position: center;
+}
+
+.icon-10px {
+    width: 10px;
+    height: 10px;
+}
+
+.icon-11px {
+    width: 11px;
+    height: 11px;
+}
+
+.icon-12px {
+    width: 12px;
+    height: 12px;
+}
+
+.icon-13px {
+    width: 13px;
+    height: 13px;
+}
+
+.icon-14px {
+    width: 14px;
+    height: 14px;
+}
+
+.icon-15px {
+    width: 15px;
+    height: 15px;
+}
+
+.icon-16px {
+    width: 16px;
+    height: 16px;
+}
+
+.icon-17px {
+    width: 17px;
+    height: 17px;
+}
+
+.icon-18px {
+    width: 18px;
+    height: 18px;
+}
+
+.icon-19px {
+    width: 19px;
+    height: 19px;
+}
+
+.icon-20px {
+    width: 20px;
+    height: 20px;
+}
+
+.icon-21px {
+    width: 21px;
+    height: 21px;
+}
+
+.icon-22px {
+    width: 22px;
+    height: 22px;
+}
+
+.icon-23px {
+    width: 23px;
+    height: 23px;
+}
+
+.icon-24px {
+    width: 24px;
+    height: 24px;
+}
+
+.icon-25px {
+    width: 25px;
+    height: 25px;
+}
+
+.icon-30px {
+    width: 30px;
+    height: 30px;
+}
+
+.icon-35px {
+    width: 35px;
+    height: 35px;
+}
+
+.icon-40px {
+    width: 40px;
+    height: 40px;
+}
+
+.icon-45px {
+    width: 45px;
+    height: 45px;
+}
+
+.icon-50px {
+    width: 50px;
+    height: 50px;
+}
+
+.icon-55px {
+    width: 55px;
+    height: 55px;
+}
+
+.icon-60px {
+    width: 60px;
+    height: 60px;
+}
+
+.icon-65px {
+    width: 65px;
+    height: 65px;
+}
+
+.icon-70px {
+    width: 70px;
+    height: 70px;
+}
+
+.icon-75px {
+    width: 75px;
+    height: 75px;
+}
+
+.icon-80px {
+    width: 80px;
+    height: 80px;
+}
+
+.icon-85px {
+    width: 85px;
+    height: 85px;
+}
+
+.icon-90px {
+    width: 90px;
+    height: 90px;
+}
+
+.icon-95px {
+    width: 95px;
+    height: 95px;
+}
+
+.icon-100px {
+    width: 100px;
+    height: 100px;
+}
+
+.icon-110px {
+    width: 110px;
+    height: 110px;
+}
+
+.icon-120px {
+    width: 120px;
+    height: 120px;
+}
+
+.icon-130px {
+    width: 130px;
+    height: 130px;
+}
+
+.icon-140px {
+    width: 140px;
+    height: 140px;
+}
+
+.icon-150px {
+    width: 150px;
+    height: 150px;
+}
+
+.icon-160px {
+    width: 160px;
+    height: 160px;
+}
+
+.icon-170px {
+    width: 170px;
+    height: 170px;
+}
+
+.icon-180px {
+    width: 180px;
+    height: 180px;
+}
+
+.icon-190px {
+    width: 190px;
+    height: 190px;
+}
+
+.icon-200px {
+    width: 200px;
+    height: 200px;
+}
+
+
+/* google */
+
+.google-white-icon {
+    background-image: url('./white/google_white_30px.png');
+}
+
+.google-black-icon {
+    /* background-image: url('./white/google_black_30px.png'); */
+}
+
+
+/* facebook */
+
+.facebook-white-icon {
+    background-image: url('./white/facebook_white_30px.png');
+}
+
+.facebook-black-icon {
+    /* background-image: url('./white/facebook_black_30px.png'); */
+}
+
+
+/* linkedin */
+
+.linkedin-white-icon {
+    background-image: url('./white/linkedin_white_30px.png');
+}
+
+.linkedin-black-icon {
+    /* background-image: url('./white/linkedin_black_30px.png'); */
+}
+
+
+/* instagram */
+
+.instagram-white-icon {
+    background-image: url('./white/instagram_white_30px.png');
+}
+
+.instagram-black-icon {
+    /* background-image: url('./white/instagram_black_30px.png'); */
+}
+
+
+/* twitter */
+
+.twitter-white-icon {
+    background-image: url('./white/twitter_white_30px.png');
+}
+
+.twitter-black-icon {
+    /* background-image: url('./white/twitter_black_30px.png'); */
+}
+
+
+/* chevron left arrow */
+
+.chev-left-arrow-white-icon {
+    background-image: url('./white/chevron_left_white_30px.png');
+}
+
+.chev-left-arrow-black-icon {
+    /* background-image: url('./white/chevron_left_black_30px.png'); */
+}
+
+
+/* chevron right arrow */
+
+.chev-right-arrow-white-icon {
+    background-image: url('./white/chevron_right_white_30px.png');
+}
+
+.chev-right-arrow-black-icon {
+    /* background-image: url('./white/chevron_right_black_30px.png'); */
+}
+
+
+/* right arrow */
+
+.right-arrow-white-icon {
+    background-image: url('./white/right_arrow_white_30px.png');
+}
+
+.right-arrow-black-icon {
+    /* background-image: url('./white/right_arrow_black_30px.png'); */
+}
+
+
+/* sort arrow */
+
+.sort-white-icon {
+    background-image: url('./white/sort_white_30px.png');
+}
+
+.sort-black-icon {
+    background-image: url('./black/sort_black_30px.png');
+}
+
+
+/* sorting */
+
+.sorting-white-icon {
+    background-image: url('./white/sorting_white_30px.png');
+}
+
+.sorting-black-icon {
+    background-image: url('./black/sorting_black_30px.png');
+}
+
+
+/* rates */
+
+.rates-white-icon {
+    background-image: url('./white/rates_white_30px.png');
+}
+
+.rates-black-icon {
+    background-image: url('./black/rates_black_30px.png');
+}
+
+
+/* financial institution */
+
+.financial-institution-white-icon {
+    background-image: url('./white/financial_institution_white_30px.png');
+}
+
+.financial-institution-black-icon {
+    background-image: url('./black/financial_institution_black_30px.png');
+}
+
+
+/* filter */
+
+.filter-white-icon {
+    background-image: url('./white/filter_white_30px.png');
+}
+
+.filter-black-icon {
+    background-image: url('./black/filter_black_30px.png');
+}
+
+
+/* settings */
+
+.settings-white-icon {
+    background-image: url('./white/settings_white_30px.png');
+}
+
+.settings-black-icon {
+    background-image: url('./black/settings_black_30px.png');
+}
+
+
+/* change password */
+
+.change-password-white-icon {
+    /* background-image: url('./white/change_password_white_30px.png'); */
+}
+
+.change-password-black-icon {
+    background-image: url('./black/password_window_black_30px.png');
+}
+
+
+/* help */
+
+.help-white-icon {
+    /* background-image: url('./white/help_white_30px.png'); */
+}
+
+.help-black-icon {
+    background-image: url('./black/help_black_30px.png');
+}
+
+
+/* okay, save */
+
+.okay-white-icon {
+    background-image: url('./white/checkmark_white_30px.png');
+}
+
+.okay-black-icon {
+    background-image: url('./black/checkmark_black_30px.png');
+}
+
+.okay-white-icon-100 {
+    background-image: url('./white/checkmark_white_30px.png');
+}
+
+.okay-black-icon-100 {
+    background-image: url('./black/checkmark_black_30px.png');
+}
+
+.okay-color-icon-100 {
+    background-image: url('./color/checkmark_color_100px.png');
+}
+
+
+/* cancel, delete & waste */
+
+.cancel-white-icon {
+    background-image: url('./white/cancel_white_30px.png');
+}
+
+.cancel-black-icon {
+    background-image: url('./black/cancel_black_30px.png');
+}
+
+.delete-white-icon {
+    /* background-image: url('./white/delete_white_30px.png'); */
+}
+
+.delete-black-icon {
+    background-image: url('./black/delete_black_30px.png');
+}
+
+.delete-account-white-icon {
+    background-image: url('./white/delete_shield_white_30px.png');
+}
+
+.delete-account-black-icon {
+    background-image: url('./black/delete_shield_black_30px.png');
+}
+
+
+/* crying */
+
+.crying-white-icon {
+    background-image: url('./white/crying_white_30px.png');
+}
+
+.crying-black-icon {
+    background-image: url('./black/crying_black_30px.png');
+}
+
+
+/* login, logout, authentication,, password, key, user account, etc. */
+
+.user-white-icon {
+    /* background-image: url('./white/user_white_30px.png'); */
+}
+
+.user-black-icon {
+    background-image: url('./black/user_black_30px.png');
+}
+
+.user-white-icon-100 {
+    background-image: url('./white/user_white_100px.png');
+}
+
+.user-black-icon-100 {
+    background-image: url('./black/user_black_100px.png');
+}
+
+.user-male-white-icon {
+    /* background-image: url('./white/user_male_white_30px.png'); */
+}
+
+.user-male-black-icon {
+    background-image: url('./black/user_male_black_30px.png');
+}
+
+.user-male-white-icon-100 {
+    background-image: url('./white/user_male_white_100px.png');
+}
+
+.user-male-black-icon-100 {
+    /* background-image: url('./black/user_male_black_100px.png'); */
+}
+
+.auth-white-icon {
+    /* background-image: url('./white/admin_white_30px.png'); */
+}
+
+.auth-black-icon {
+    background-image: url('./black/admin_black_30px.png');
+}
+
+.login-white-icon {
+    /* background-image: url('./white/logout_white_30px.png'); */
+}
+
+.login-black-icon {
+    background-image: url('./black/logout_black_30px.png');
+}
+
+.logout-white-icon {
+    /* background-image: url('./white/logout_white_30px.png'); */
+}
+
+.logout-black-icon {
+    background-image: url('./black/logout_black_30px.png');
+}
+
+.password-1-white-icon {
+    /* background-image: url('./white/password_1_white_30px.png'); */
+}
+
+.password-1-black-icon {
+    background-image: url('./black/password_1_black_30px.png');
+}
+
+.password-2-white-icon {
+    /* background-image: url('./white/password_2_white_30px.png'); */
+}
+
+.password-2-black-icon {
+    background-image: url('./black/password_2_black_30px.png');
+}
+
+
+/* profile */
+
+.profile-white-icon {
+    /* background-image: url('./white/profile_white_30px.png'); */
+}
+
+.profile-black-icon {
+    background-image: url('./black/profile_black_30px.png');
+}
+
+
+/* contact address */
+
+.contact-address-white-icon {
+    /* background-image: url('./white/home_address_white_30px.png'); */
+}
+
+.contact-address-black-icon {
+    background-image: url('./black/home_address_black_30px.png');
+}
+
+
+/* email address */
+
+.email-white-icon {
+    /* background-image: url('./white/email_white_30px.png'); */
+}
+
+.email-black-icon {
+    background-image: url('./black/email_black_30px.png');
+}
+
+
+/* upload */
+
+.upload-white-icon {
+    background-image: url('./white/upload_white_30px.png');
+}
+
+.upload-black-icon {
+    background-image: url('./black/upload_black_30px.png');
+}
+
+.cloud-upload-white-icon {
+    background-image: url('./white/upload_to_cloud_white_30px.png');
+}
+
+.cloud-upload-black-icon {
+    background-image: url('./black/upload_to_cloud_black_30px.png');
+}
+
+
+/* calendar */
+
+.calendar-white-icon {
+    /* background-image: url('./white/schedule_white_30px.png'); */
+}
+
+.calendar-black-icon {
+    background-image: url('./black/schedule_black_30px.png');
+}
+
+
+/* calendar */
+
+.search-white-icon {
+    background-image: url('./white/search_white_30px.png');
+}
+
+.search-black-icon {
+    background-image: url('./black/search_black_30px.png');
+}
+
+/* add */
+.add-black-icon {
+  background-image: url('./black/add_black_30px.png');
+}
+
+.add-white-icon {
+  background-image: url('./white/add_white_30px.png');
+}
